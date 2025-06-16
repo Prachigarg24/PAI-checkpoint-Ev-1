@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <title>Timer Task Board</title>
+  <link rel="stylesheet" herf="style.css" />
+  </head>
+  <body>
+    <h2> Timer Task Board </h2>
+ <!--Input Form-->
+ <form id="task-form">
+  <input type="text" id="task-name"placeholder="Task Name" required />
+   <input type="number" id="task-delay"placeholder="Delay (ms)" required />
+   <label>
+    <input type="checkbox" id="repeat" />
+    Repeat ?
+   </label>
+   <button type="submit">Start Task</button>
+ </form>
+ <!--Task log-->
+ <ui id="task-log"></ui>
+ <!--Cancel button-->
+ <button id="cancel-all" style="display:none;">Cancel All Repeating Tasks</button>
+ <script src="script.js"></script>
+  </body>
+</html>
